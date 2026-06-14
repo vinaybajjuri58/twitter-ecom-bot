@@ -1,0 +1,12 @@
+tweepy>=4.14
+curl_cffi>=0.6
+playwright>=1.40
+selectolax>=0.3
+tenacity>=8.2
+pydantic>=2.5
+pydantic-settings>=2.1
+python-dotenv>=1.0
+httpx>=0.25
+rich>=13.0
+pytest>=7.4
+pytest-asyncio>=0.21
