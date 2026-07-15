@@ -1,0 +1,1 @@
+{"excludes": [".venv", ".pytest_cache", "generated", "output", "cache"]}

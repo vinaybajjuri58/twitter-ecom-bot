@@ -1,0 +1,256 @@
+{
+  "communities": {
+    "0": [
+      "abc",
+      "src_product_models",
+      "src_scraper_amazon",
+      "src_scraper_amazon_amazonscraper",
+      "src_scraper_amazon_amazonscraper_init",
+      "src_scraper_amazon_amazonscraper_search",
+      "src_scraper_base",
+      "src_scraper_base_basescraper",
+      "src_scraper_base_basescraper_delay",
+      "src_scraper_base_basescraper_random_ua",
+      "src_scraper_base_basescraper_search",
+      "src_scraper_bestbuy",
+      "src_scraper_bestbuy_bestbuyscraper",
+      "src_scraper_bestbuy_bestbuyscraper_init",
+      "src_scraper_bestbuy_bestbuyscraper_search",
+      "src_scraper_ebay",
+      "src_scraper_ebay_ebayscraper",
+      "src_scraper_ebay_ebayscraper_init",
+      "src_scraper_ebay_ebayscraper_search",
+      "src_scraper_orchestrator",
+      "src_scraper_walmart",
+      "src_scraper_walmart_walmartscraper",
+      "src_scraper_walmart_walmartscraper_init",
+      "src_scraper_walmart_walmartscraper_search"
+    ],
+    "1": [
+      "src_affiliates_links",
+      "src_affiliates_links_build_amazon_affiliate",
+      "src_affiliates_links_build_bestbuy_affiliate",
+      "src_affiliates_links_build_ebay_affiliate",
+      "src_affiliates_links_build_walmart_affiliate",
+      "src_affiliates_links_enrich_products",
+      "src_config",
+      "src_config_config",
+      "src_config_config_validate",
+      "src_main",
+      "src_main_main",
+      "src_main_setup_logging",
+      "src_scraper_orchestrator_search_all",
+      "src_twitter_client",
+      "src_twitter_client_py_api",
+      "src_twitter_client_py_client",
+      "src_twitter_client_setup_twitter_client",
+      "src_twitter_mention_handler",
+      "src_twitter_mention_handler_handle_mention",
+      "src_twitter_mention_handler_poll_mentions",
+      "src_twitter_mention_handler_py_api",
+      "src_twitter_mention_handler_py_client",
+      "src_twitter_mention_handler_reply"
+    ],
+    "2": [
+      "src_product_extractor",
+      "src_product_extractor_clean_tweet",
+      "src_product_extractor_extract_product_name",
+      "tests_init",
+      "tests_init_test_cheapest_trigger",
+      "tests_init_test_multiple_quotes_uses_first",
+      "tests_init_test_natural_product_name",
+      "tests_init_test_no_product_returns_none",
+      "tests_init_test_only_mention_returns_none",
+      "tests_init_test_quoted_product_name",
+      "tests_init_test_where_to_buy_trigger",
+      "tests_init_test_with_hashtags",
+      "tests_init_test_with_url",
+      "tests_test_extractor",
+      "tests_test_extractor_test_cheapest_trigger",
+      "tests_test_extractor_test_multiple_quotes_uses_first",
+      "tests_test_extractor_test_natural_product_name",
+      "tests_test_extractor_test_no_product_returns_none",
+      "tests_test_extractor_test_only_mention_returns_none",
+      "tests_test_extractor_test_quoted_product_name",
+      "tests_test_extractor_test_where_to_buy_trigger",
+      "tests_test_extractor_test_with_hashtags",
+      "tests_test_extractor_test_with_url"
+    ],
+    "3": [
+      "src_formatter_comparison",
+      "src_formatter_comparison_format_comparison",
+      "src_formatter_comparison_format_product_line",
+      "src_product_models_comparisonresult",
+      "src_product_models_comparisonresult_cheapest",
+      "src_product_models_comparisonresult_failed",
+      "src_product_models_product",
+      "tests_test_formatter",
+      "tests_test_formatter_make_product",
+      "tests_test_formatter_test_cheapest_is_cheapest_product",
+      "tests_test_formatter_test_empty_comparison",
+      "tests_test_formatter_test_no_prices",
+      "tests_test_formatter_test_product_line_format",
+      "tests_test_formatter_test_single_product",
+      "tests_test_formatter_test_truncation",
+      "tests_test_models",
+      "tests_test_models_test_cheapest_all_no_price",
+      "tests_test_models_test_cheapest_picks_lowest",
+      "tests_test_models_test_cheapest_single",
+      "tests_test_models_test_failed_empty",
+      "tests_test_models_test_not_failed_with_products",
+      "tests_test_models_test_price_parsing_dollar_sign"
+    ],
+    "4": [
+      "src_scraper_base_basescraper_init",
+      "src_scraper_base_ratelimiter",
+      "src_scraper_base_ratelimiter_acquire",
+      "src_scraper_base_ratelimiter_handle_429",
+      "src_scraper_base_ratelimiter_handle_success",
+      "src_scraper_base_ratelimiter_init"
+    ],
+    "5": [
+      "src_affiliates_init"
+    ],
+    "6": [
+      "src_formatter_init"
+    ],
+    "7": [
+      "src_init"
+    ],
+    "8": [
+      "src_product_init"
+    ],
+    "9": [
+      "src_scraper_init"
+    ],
+    "10": [
+      "src_twitter_init"
+    ]
+  },
+  "cohesion": {
+    "0": 0.15942028985507245,
+    "1": 0.14624505928853754,
+    "2": 0.16996047430830039,
+    "3": 0.24675324675324675,
+    "4": 0.3333333333333333,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0
+  },
+  "gods": [
+    {
+      "id": "src_product_models_product",
+      "label": "Product",
+      "degree": 32
+    },
+    {
+      "id": "src_product_extractor_extract_product_name",
+      "label": "extract_product_name()",
+      "degree": 24
+    },
+    {
+      "id": "src_product_models_comparisonresult",
+      "label": "ComparisonResult",
+      "degree": 20
+    },
+    {
+      "id": "src_scraper_base_basescraper",
+      "label": "BaseScraper",
+      "degree": 15
+    },
+    {
+      "id": "src_formatter_comparison_format_comparison",
+      "label": "format_comparison()",
+      "degree": 10
+    },
+    {
+      "id": "src_scraper_orchestrator_search_all",
+      "label": "search_all()",
+      "degree": 8
+    },
+    {
+      "id": "src_twitter_mention_handler_handle_mention",
+      "label": "_handle_mention()",
+      "degree": 8
+    },
+    {
+      "id": "src_scraper_amazon_amazonscraper",
+      "label": "AmazonScraper",
+      "degree": 7
+    },
+    {
+      "id": "src_scraper_base_ratelimiter",
+      "label": "RateLimiter",
+      "degree": 7
+    },
+    {
+      "id": "src_scraper_bestbuy_bestbuyscraper",
+      "label": "BestBuyScraper",
+      "degree": 7
+    }
+  ],
+  "surprises": [
+    {
+      "source": "test_cheapest_trigger()",
+      "target": "extract_product_name()",
+      "source_files": [
+        "tests/__init__.py",
+        "src/product/extractor.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; peripheral node `test_cheapest_trigger()` unexpectedly reaches hub `extract_product_name()`"
+    },
+    {
+      "source": "test_multiple_quotes_uses_first()",
+      "target": "extract_product_name()",
+      "source_files": [
+        "tests/__init__.py",
+        "src/product/extractor.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; peripheral node `test_multiple_quotes_uses_first()` unexpectedly reaches hub `extract_product_name()`"
+    },
+    {
+      "source": "test_natural_product_name()",
+      "target": "extract_product_name()",
+      "source_files": [
+        "tests/__init__.py",
+        "src/product/extractor.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; peripheral node `test_natural_product_name()` unexpectedly reaches hub `extract_product_name()`"
+    },
+    {
+      "source": "test_no_product_returns_none()",
+      "target": "extract_product_name()",
+      "source_files": [
+        "tests/__init__.py",
+        "src/product/extractor.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; peripheral node `test_no_product_returns_none()` unexpectedly reaches hub `extract_product_name()`"
+    },
+    {
+      "source": "test_only_mention_returns_none()",
+      "target": "extract_product_name()",
+      "source_files": [
+        "tests/__init__.py",
+        "src/product/extractor.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; peripheral node `test_only_mention_returns_none()` unexpectedly reaches hub `extract_product_name()`"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}
